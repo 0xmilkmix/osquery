@@ -212,6 +212,11 @@ void genApplication(const pt::ptree& tree,
       r[item.second] = INTEGER(0);
     }
   }
+
+  if (r["element"] == "") {
+    r["element"] = INTEGER(0);
+  }
+  
   results.push_back(std::move(r));
 }
 

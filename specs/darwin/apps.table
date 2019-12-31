@@ -14,7 +14,7 @@ schema([
     Column("bundle_package_type", TEXT,
         "Info properties CFBundlePackageType label"),
     Column("environment", TEXT, "Application-set environment variables"),
-    Column("element", TEXT, "Does the app identify as a background agent"),
+    Column("element", INTEGER, "Does the app identify as a background agent"),
     Column("compiler", TEXT, "Info properties DTCompiler label"),
     Column("development_region", TEXT,
         "Info properties CFBundleDevelopmentRegion label"),
