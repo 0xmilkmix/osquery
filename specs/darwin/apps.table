@@ -24,7 +24,7 @@ schema([
         "Minimum version of OS X required for the app to run"),
     Column("category", TEXT,
         "The UTI that categorizes the app for the App Store"),
-    Column("applescript_enabled", TEXT,
+    Column("applescript_enabled", INTEGER,
         "Info properties NSAppleScriptEnabled label"),
     Column("copyright", TEXT, "Info properties NSHumanReadableCopyright label"),
     Column("last_opened_time", DOUBLE, "The time that the app was last used"),
